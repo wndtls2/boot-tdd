@@ -51,4 +51,11 @@
                assertj 테스트 검증라이브러리의 검증
                
                given,when,then 순
+               
+3) JUnit4, 5 차이점
 
+  3-1) 
+      
+      4: @RunWith(SpringRunner.class) 
+  
+       5 : @ExtendWith(SpringExtension.class)  5에선 RunWith 지원하지않음
