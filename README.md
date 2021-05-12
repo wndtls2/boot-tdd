@@ -58,4 +58,13 @@
       
       4: @RunWith(SpringRunner.class) 
   
-       5 : @ExtendWith(SpringExtension.class)  5에선 RunWith 지원하지않음
+      5: @ExtendWith(SpringExtension.class)  5에선 RunWith 지원하지않음
+    
+ 4) 주의사항
+ 
+   4-1) @WebMvcTest / @SpringBootTest 차이
+    
+    @WebMvcTest의 경우 JPA 기능이 작동하지 않기때문에 Controller와 ControllerAdvice 등 외부연동과 관련된 부분만 활성화됨
+    JPA 기능까지 한번에 테스트할 때는 @SpringBootTest와 TestRestTemplate을 사용
+ 
+    
