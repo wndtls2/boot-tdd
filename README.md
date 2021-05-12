@@ -49,4 +49,6 @@
         2-2-1) JUnit4를 사용하며 메소드에 @Test를 작성하고
         
                assertj 테스트 검증라이브러리의 검증
+               
+               given,when,then 순
 
